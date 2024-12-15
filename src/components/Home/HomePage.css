@@ -1,0 +1,67 @@
+.home-page {
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.home-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #008080;
+  background: linear-gradient(45deg, #008080, #ffb400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomIn 0.8s ease;
+}
+
+.input-container textarea {
+  width: 900px;
+  height: 150px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #ffb400;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+  resize: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container textarea:focus {
+  border-color: #008080;
+  outline: none;
+  transform: scale(1.05);
+}
+
+.input-container button {
+  background: linear-gradient(45deg, #008080, #ffb400);
+  padding: 12px 20px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

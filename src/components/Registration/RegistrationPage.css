@@ -1,0 +1,41 @@
+.registration-page {
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+.registration-page h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #ffb400;
+  background: linear-gradient(to right, #ffb400, #008080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  width: 280px;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 50px;
+  border: 2px solid #ffb400;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #008080;
+}
+
+button {
+  background: linear-gradient(to right, #ffb400, #008080);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

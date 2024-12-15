@@ -1,0 +1,61 @@
+.login-page {
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.login-page h1 {
+  font-size: 3rem;
+  color: #ffb400;
+  background: -webkit-linear-gradient(45deg,#ffb400 ,#008080 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 180, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 300px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #008080;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #ffb400;
+  outline: none;
+}
+
+span {
+  color: #ffb400;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+span:hover {
+  color: #008080;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
